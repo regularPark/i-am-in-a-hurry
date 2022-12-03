@@ -1,10 +1,10 @@
 import "./App.css";
-import Location from "./components/Map";
+import SearchPlaces from "./components/SearchPlaces";
 
 function App() {
   return (
     <div className="wrap-map">
-      <Location />
+      <SearchPlaces />
     </div>
   );
 }
