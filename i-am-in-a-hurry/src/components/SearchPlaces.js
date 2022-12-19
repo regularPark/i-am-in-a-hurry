@@ -23,6 +23,10 @@ function SearchPlaces() {
     setPlace("화장실");
   };
 
+  const btnSubwayStn = () => {
+    setPlace("지하철역");
+  };
+
   return (
     <>
       <form className="inputForm" onSubmit={handleSubmit}>
@@ -36,6 +40,7 @@ function SearchPlaces() {
       <MapContainer searchPlace={Place} />
       <button onClick={btnBGK}>버거킹</button>
       <button onClick={btnToilet}>화장실</button>
+      <button onClick={btnSubwayStn}>지하철역</button>
     </>
   );
 }
